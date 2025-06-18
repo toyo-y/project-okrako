@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>グループホームおけらこ</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/custom-dropdown.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="hero">
+    <div class="slideshow">
+      <div class="slide active" style="background-image: url('images/slide1.jpg');"></div>
+      <div class="slide" style="background-image: url('images/slide2.jpg');"></div>
+      <div class="slide" style="background-image: url('images/slide3.jpg');"></div>
+    </div>
+    <div class="hero-text">
+      <h2>安心と笑顔のある暮らし</h2>
+      <p>地域に根ざした、やさしいグループホーム。</p>
+    </div>
+  </section>
+
+  <main class="main-content container">
+    <section class="intro">
+      <h3>ようこそ、グループホームおけらこへ</h3>
+      <p>「グループホームおけらこ」は、障がいをお持ちの方が地域で安心して暮らせる家庭的な住まいです。</p>
+      <a href="facility.html" class="btn">施設を見る</a>
+    </section>
+
+    <section class="features">
+      <h3>おけらこの特徴</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>家庭的な雰囲気</h4>
+          <p>少人数制で落ち着いた空間。<br>安心できる住まいを提供します。</p>
+        </div>
+        <div class="card">
+          <h4>健康を第一に考えた食事提供</h4>
+          <p>朝食及び夕食は健康を第一に考えた<br>栄養バランスの整った食事を提供</p>
+        </div>
+        <div class="card">
+          <h4>見学・体験可能</h4>
+          <p>ご入居前の見学・体験入居も<br>お気軽にご相談ください。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <p>&copy; 2025 合同会社おけらこ</p>
+      <p>埼玉県さいたま市浦和区本太1-19-15 | TEL: 048-708-8406</p>
+    </div>
+  </footer>
+
+  <script src="js/slideshow.js"></script>
+
+  <script>
+  fetch("parts/header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+    });
+</script>
+
+<script src="js/active-menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>会社概要 | グループホームおけらこ</title>
+  <link rel="stylesheet" href="css/company.css" />
+  <link rel="stylesheet" href="css/custom-dropdown.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+    .company-info-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .company-info-wrapper .company-table {
+      flex: 1 1 400px;
+    }
+
+    .company-info-wrapper .map-container {
+      flex: 1 1 400px;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .map-container {
+      flex: 1 1 400px;
+      height: auto;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+    .company-table {
+      width: 100%;
+      table-layout: fixed;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main class="main-content container">
+    <h2 class="page-title">会社概要</h2>
+
+        <div class="company-info-wrapper">
+      <table class="company-table">
+                <tr>
+          <th>会社名</th>
+          <td>合同会社おけらこ</td>
+        </tr>
+        <tr>
+          <th>所在地</th>
+          <td>〒330-0052<br>埼玉県さいたま市浦和区本太1-19-15</td>
+        </tr>
+        <tr>
+          <th>会社設立</th>
+          <td>2019年8月30日</td>
+        </tr>
+        <tr>
+          <th>GH設立</th>
+          <td>2019年9月5日</td>
+        </tr>
+        <tr>
+          <th>事業所番号</th>
+          <td>1126510328</td>
+        </tr>
+        <tr>
+          <th>代表</th>
+          <td>小畑 貴文</td>
+        </tr>
+        <tr>
+          <th>連絡先</th>
+          <td>TEL：012-345-6789<br>MAIL：info@example.com</td>
+        </tr>
+      </table>
+
+    <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.4281086384585!2d139.66041167649965!3d35.863024272529195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018eb157c6918a7%3A0x454433b7f70dfab5!2z44Kw44Or44O844OX44Ob44O844Og44GK44GR44KJ44GT!5e0!3m2!1sja!2sjp!4v1749906511500!5m2!1sja!2sjp"
+            width="100%" height="300" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <section class="company-mission">
+      <h3>会社理念</h3>
+      <p>
+        Make Simple, Feel Happy<br>-シンプルさを通して、関わるすべての人に幸せを-
+        <br>
+        Simpleとは「簡単」「簡潔」「理解しやすい」「無駄がない」「理にかなっている」ということ。 私達はSimpleを追求します。<br>
+        Simpleは、「思いやり」を具現化するひとつのアプローチだと考えます。<br>
+        <br>
+        具体的には<br>
+        「簡単」：マニュアルを整備し、再現性を高めます。<br>
+        「簡潔」：情報を集約・整理整頓して、探す時間を最小限にします。<br>
+        「理解しやすい」：思っていること言葉にして伝えることを歓迎します。<br>
+        「無駄がない」：既存の非効率な慣習・ルールを排除します。<br>
+        「理にかなっている」： テクノロジーを活用して、業務の効率化をします。<br>
+        あたたかく支え合えるコミュニティづくりを推進していきます。<br>
+        <br>
+        Happyとは「幸せ」「幸福」ということ。<br>
+        私達はHappyを追求します。Happyは、働く人と利用する人の間で相関関係があると考えます。<br>
+        <br>
+        具体的には、利用する人だけがとても幸せということもなければ、働く人だけがとて幸せということもないと考えます。<br>
+        利用する人へは、継続的に質の高いサービスを提供し、自立の度合い高めることを最大限サポートします。<br>
+        働く人へは、働きやすい環境を提供し、創造性もって利用する方と関わることのできる時間を確保します。<br>
+        <br>
+        結果として、両者の幸福度が最大化している時、私たちは利用する人にとって最も素晴らしいサービスを提供できていると考えます。
+
+      </p>
+    </section>
+  </main>
+
+   <footer class="site-footer" id="contact">
+    <div class="container">
+      <p>&copy; 2025 合同会社おけらこ</p>
+      <p>埼玉県さいたま市浦和区本太1-19-15 | TEL: 048-708-8406</p>
+    </div>
+  </footer>
+
+  <script>
+    fetch("parts/header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+    });
+</script>
+
+<script src="js/active-menu.js"></script>
+</body>
+</html>
