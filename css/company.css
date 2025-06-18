@@ -12,6 +12,7 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 
 /* ヘッダー */
@@ -68,9 +69,12 @@ body {
 
 .page-title {
   font-size: 2.4rem;
-  text-align: center;
-  margin: 2rem 0;
   color: #2F3053;
+  border-bottom: 2px solid #2F3053;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  margin: 2rem auto;
+  text-align: center;
 }
 
 .site-footer {
@@ -115,11 +119,41 @@ html {
   background-color: #f9f9f9;
 }
 
-/*GoogleMapのサイズ調整*/
-.map-container {
+/* 会社理念セクションのスタイル */
+.company-mission {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+/* 新規追加: 会社概要テーブルとマップを横並びにするラッパー */
+.company-info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.company-info-wrapper .company-table {
+  margin: 0;
+  width: 600px;
+}
+
+.company-info-wrapper .map-container {
   flex: 1 1 500px;
-  height: 440px; /* ← ここで調整 */
+  height: 500px;
   display: flex;
   align-items: stretch;
-  transform: translateY(33px); /* 下に20pxずらす */
+  transform: translateY(0); /* reset adjustment */
+}
+
+.company-mission h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: #2F3053;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #2F3053;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
