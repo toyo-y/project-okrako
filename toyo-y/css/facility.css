@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Poppins:wght@500&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #2F3053;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 5rem;
+  row-gap: 2rem;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: #808093;
+}
+
+.main-content {
+  padding: 3rem 0;
+}
+
+.page-title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 2rem 0;
+  color: #2F3053;
+}
+
+.facility {
+  margin-bottom: 4rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.facility h3 {
+  font-size: 1.8rem;
+  color: #2F3053;
+  margin-bottom: 1rem;
+}
+
+.status {
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.status.full {
+  background-color: #ff9999;
+  color: #fff;
+}
+
+.status.available {
+  background-color: #99cc99;
+  color: #fff;
+}
+
+.site-footer {
+  background: #2F3053;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.media-embed-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap; /* 画面幅が狭いときは縦に折り返し */
+}
+
+.map-container,
+.video-container {
+  flex: 1 1 300px;
+}
+
+html {
+  scroll-padding-top: 120px; /* ヘッダーの高さに応じて調整 */
+  scroll-behavior: smooth;
+}
