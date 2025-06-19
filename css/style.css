@@ -187,3 +187,54 @@ body {
 .company-info dd {
   margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 0;
+  }
+
+  .main-nav li {
+    margin-bottom: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .site-footer {
+    font-size: 0.75rem;
+    padding: 1.5rem 0;
+  }
+
+  .company-info dl {
+    grid-template-columns: 1fr;
+  }
+
+  .company-info {
+    padding: 1rem;
+  }
+}
